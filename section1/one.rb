@@ -35,3 +35,15 @@ if password == "asdf"
 else
     p false
 end
+
+# string interpolation
+puts "enter an animal:"
+animal = gets.chomp
+
+p "The quick brown #{animal} jumped over the lazy dog."
+
+# interpolation doesn't work with single-quotes
+p 'The quick brown #{animal} jumped over the lazy dog.'
+
+# you can interpolate ruby code
+p "two plus two equals #{2+2}"
